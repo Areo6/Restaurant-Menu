@@ -13,6 +13,13 @@ body {
     margin: 0;
     background-image: url(../img/background_breakfast.jpg);
     background-repeat: repeat-x;
+    background-color: black;
+}
+
+body.user-is-tabbing *:focus {
+    outline: 2px solid #7AACFE !important;
+    /* for non-webkit browsers */
+    outline: 5px auto -webkit-focus-ring-color !important;
 }
 
 
@@ -147,6 +154,85 @@ a:hover .dish-desc {
     color: white;
 }
 
+
+/* PLace an order page */
+
+.content-wrap {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    text-align: center;
+}
+
+.col-narrow {
+    width: 48%;
+    height: 100%;
+    padding-right: 2%;
+}
+
+.dsh {
+    margin-top: 200px;
+    background-color: black;
+    color: gray;
+    padding: 2%;
+    padding-top: 0%;
+    padding-right: 0%;
+}
+
+.col-wide {
+    height: 100%;
+    width: 48%;
+}
+
+.col-wide .dish-name {
+    margin-top: 0%;
+    font-size: 2em;
+}
+
+.order-btn {
+    border: none;
+    border-radius: 60%;
+    margin: 0px;
+    padding: 0px;
+    width: 48%;
+    min-height: 50px;
+    background: rgb(46, 20, 1);
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    float: right;
+}
+
+.cancel-btn {
+    border: none;
+    border-radius: 60%;
+    margin: 0px;
+    padding: 0px;
+    width: 48%;
+    min-height: 50px;
+    background: rgb(46, 20, 1);
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    float: left;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+}
+
+button:focus {
+    outline: none;
+    outline: 0;
+}
+
+@media only screen and (max-width: 816px) {
+    .col-wide .dish-name {
+        font-size: 1em;
+    }
+}
+
 @media only screen and (max-width: 573px) {
     .restaurant {
         margin-left: 0%;
@@ -157,5 +243,18 @@ a:hover .dish-desc {
     }
     nav a {
         padding: 1%;
+    }
+    .content-wrap {
+        display: inline-block;
+        overflow: auto;
+    }
+    .col-narrow {
+        width: 100%;
+    }
+    .col-wide {
+        width: 100%;
+    }
+    .col-wide .dish-name {
+        font-size: 2em;
     }
 }
