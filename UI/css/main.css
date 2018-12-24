@@ -222,7 +222,7 @@ img {
     padding: 0px;
 }
 
-button:focus {
+input:focus {
     outline: none;
     outline: 0;
 }
@@ -279,18 +279,21 @@ button:focus {
     min-width: 300px;
 }
 
-.ad-btns button {
-    border-style: none;
+.ad-btns input {
+    outline: none;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: chocolate;
+    border-radius: 5px;
+    padding: 7px;
     color: rgb(170, 90, 15);
     background: black;
     margin: 1%;
 }
 
-.ad-btns button:hover {
+.ad-btns input:hover {
     text-decoration: underline;
 }
-
-.ad-btn {}
 
 @media only screen and (max-width: 816px) {
     .col-wide .dish-name {
