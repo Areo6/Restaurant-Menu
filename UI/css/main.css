@@ -227,6 +227,71 @@ button:focus {
     outline: 0;
 }
 
+
+/* Admin view orders page */
+
+.ad-dsh {
+    width: 300px;
+    min-width: 150px;
+    display: flex;
+    padding: 1%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+}
+
+.ad-image {
+    width: 100%;
+    /* height: 50%; */
+}
+
+.ad-orders {
+    font-family: sans-serif;
+    color: white;
+    /* padding: 2%; */
+    padding-right: 0%;
+    display: flex;
+    padding-bottom: 0px;
+}
+
+.ad-desc {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.ad {
+    font-size: 1.1em;
+    min-width: 150px;
+    text-align: center;
+}
+
+.ad-name {
+    color: white;
+}
+
+#ad-orders {
+    margin-top: 270px;
+}
+
+.ad-btns {
+    margin-top: 1%;
+    min-width: 300px;
+}
+
+.ad-btns button {
+    border-style: none;
+    color: rgb(170, 90, 15);
+    background: black;
+    margin: 1%;
+}
+
+.ad-btns button:hover {
+    text-decoration: underline;
+}
+
+.ad-btn {}
+
 @media only screen and (max-width: 816px) {
     .col-wide .dish-name {
         font-size: 1em;
