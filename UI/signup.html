@@ -14,15 +14,17 @@
     <section class="login">
         <div class="form">
             <h2 class="login-label">Login</h2>
-            <form action="admin_view_orders.html" method="GET" class="sign" onsubmit="return valid();">
+            <form action="index.html" method="GET" class="sign">
                 <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="User Name Here" class="login-input" required>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="login_email" placeholder="e.g. eubule321@gmail.com" class="login-input" required>
+                    <input type="email" name="email" placeholder="e.g. eubule321@gmail.com" class="login-input" required>
                     <label for="password">Password</label>
-                    <input type="password" id="login_password" placeholder="Your Password" name="password" class="login-input" required>
+                    <input type="password" placeholder="Your Password" name="password" class="login-input" required>
                 </fieldset>
                 <input type="submit" name="submit" value="Submit" class="submit-btn">
-                <a href="signup.html"><input type="button" name="submit" value="Create an account?" class="signup-btn"></a>
+                <a href="login.html"><input type="button" name="submit" value="Login?" class="signup-btn"></a>
             </form>
         </div>
     </section>
