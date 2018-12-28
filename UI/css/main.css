@@ -1,0 +1,565 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+* :before,
+* :after {
+    box-sizing: inherit;
+}
+
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    margin: 0;
+    background-image: url(../img/background_breakfast.jpg);
+    background-repeat: repeat-x;
+    background-color: black;
+}
+
+body.user-is-tabbing *:focus {
+    outline: 2px solid #7AACFE !important;
+    /* for non-webkit browsers */
+    outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+
+/* Login form */
+
+.form {
+    width: 60%;
+    max-width: 400px;
+    margin: 0 auto;
+    /* margin-top: 10%; */
+    font-size: 1em;
+    font-weight: lighter;
+    color: white;
+    background: black;
+}
+
+.login {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(112, 120, 133, 0.8);
+    height: 100%;
+    background: linear-gradient(rgba(112, 120, 133, 0.8), rgba(96, 105, 121, 0.5)), url(../img/background_breakfast\ \(copy\).jpg);
+    padding: 10%;
+}
+
+.login-input {
+    display: block;
+    min-height: 40px;
+    width: 90%;
+    font-size: 0.8em;
+    margin: 10px 0;
+    border-style: ridge;
+    border-width: 1px;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+.signup-btn {
+    float: right;
+    border-style: 1px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: chocolate;
+    width: 150px;
+    min-height: 40px;
+    margin: 5px 1px;
+    background-color: black;
+    color: chocolate;
+}
+
+.submit-btn {
+    float: right;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: chocolate;
+    width: 100px;
+    min-height: 40px;
+    margin: 5px 1px;
+    background-color: black;
+    color: chocolate;
+}
+
+.login-label {
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+
+/* Page navigation */
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: gray;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+nav a:active {
+    color: white;
+}
+
+.restaurant {
+    font-family: 'Caveat', cursive;
+    font-weight: 900;
+    color: white;
+    padding-right: 20%;
+}
+
+#order {
+    border-style: ridge;
+    border-color: chocolate;
+    border-width: 1px;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    background: black;
+    color: chocolate;
+    position: fixed;
+    top: 43px;
+    right: 0;
+}
+
+#add {
+    border-style: ridge;
+    border-color: chocolate;
+    border-width: 1px;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    background: black;
+    color: chocolate;
+    position: fixed;
+    top: 43px;
+    right: 0;
+}
+
+
+/* View all pages */
+
+.dishes {
+    height: 100%;
+    margin-top: 200px;
+    background-color: black;
+    color: gray;
+    padding: 2%;
+    padding-right: 0%;
+}
+
+.dish {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.price {
+    color: chocolate;
+}
+
+.dish-name {
+    color: white;
+    text-transform: uppercase;
+}
+
+.dish-desc {
+    font-size: 0.9em;
+    color: gray;
+}
+
+a:hover .dish-desc {
+    color: white;
+}
+
+
+/* PLace an order page */
+
+.content-wrap {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    text-align: center;
+}
+
+.col-narrow {
+    width: 48%;
+    height: 100%;
+    padding-right: 2%;
+}
+
+.dsh {
+    margin-top: 200px;
+    background-color: black;
+    color: gray;
+    padding: 2%;
+    padding-top: 0%;
+    padding-right: 0%;
+}
+
+.col-wide {
+    height: 100%;
+    width: 48%;
+}
+
+.col-wide .dish-name {
+    margin-top: 0%;
+    font-size: 2em;
+}
+
+.order-btn {
+    border: ridge;
+    border-width: 1px;
+    border-color: chocolate;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 48%;
+    min-height: 50px;
+    background: black;
+    color: chocolate;
+    text-transform: uppercase;
+    outline: none;
+    float: right;
+}
+
+.cancel-btn {
+    border: ridge;
+    border-width: 1px;
+    border-color: chocolate;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    width: 48%;
+    min-height: 50px;
+    background: black;
+    color: chocolate;
+    text-transform: uppercase;
+    outline: none;
+    float: left;
+}
+
+.dish-details {
+    padding-top: 1%;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+}
+
+input:focus {
+    outline: none;
+    outline: 0;
+}
+
+
+/* Admin view orders page */
+
+.ad-dsh {
+    width: 300px;
+    min-width: 300px;
+    display: flex;
+    padding: 1%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+    margin: 1%;
+}
+
+.ad-image {
+    width: 100%;
+    /* height: 50%; */
+}
+
+.ad-orders {
+    font-family: sans-serif;
+    color: white;
+    /* padding: 2%; */
+    padding-right: 0%;
+    display: flex;
+    padding-bottom: 0px;
+    background-color: black;
+}
+
+.ad-desc {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.ad {
+    font-size: 1.1em;
+    min-width: 150px;
+    text-align: center;
+}
+
+.ad-name {
+    color: white;
+}
+
+#ad-orders {
+    margin-top: 20%;
+    background-color: black;
+}
+
+.ad-btns {
+    margin-top: 1%;
+    min-width: 300px;
+}
+
+.ad-btns input {
+    outline: none;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: chocolate;
+    border-radius: 5px;
+    padding: 7px;
+    color: rgb(170, 90, 15);
+    background: black;
+    margin: 1%;
+}
+
+.ad-btns input:hover {
+    text-decoration: underline;
+}
+
+
+/* View all the ordered food */
+
+.us-image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.us-dsh {
+    width: 300px;
+    min-width: 300px;
+    padding: 1%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+    margin-bottom: 1%;
+}
+
+.us {
+    font-size: 1.1em;
+    min-width: 150px;
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.us-number {
+    width: 400px;
+    font-size: 1em;
+}
+
+.us-btn {
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.us-btn input {
+    outline: none;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: chocolate;
+    min-height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    color: rgb(170, 90, 15);
+    background: black;
+    margin: 1%;
+}
+
+.us-btn input:hover {
+    text-decoration: underline;
+}
+
+.us-num {
+    font-size: 1.1em;
+}
+
+
+/* Admin add dish page */
+
+.ad-select-options {
+    position: absolute;
+    width: 100%;
+    margin-left: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+.ad-add-details-box {
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: chocolate;
+    height: 40px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 0.9em;
+    background: black;
+    color: white;
+}
+
+.ad-input {
+    border-style: ridge;
+    border-width: 1px;
+    position: absolute;
+    width: 97%;
+    margin-left: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+.ad-select {
+    position: relative;
+    width: 35%;
+    margin-left: 10px;
+}
+
+.ad-category {
+    display: flex;
+    position: relative;
+}
+
+.details-lab {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: white;
+}
+
+.us-dish-details {
+    width: 100%;
+    /* overflow: auto; */
+    display: flex;
+    padding-top: 1%;
+    text-align: start;
+}
+
+.admin-add-dish {
+    margin: 2%;
+}
+
+.admin-add-btns {
+    border: ridge;
+    border-width: 1px;
+    border-color: chocolate;
+    border-radius: 10px;
+    margin-left: 0px;
+    padding: 0px;
+    width: 20%;
+    min-height: 50px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    margin-right: 2%;
+}
+
+.add-dish-btns {
+    text-align: center;
+}
+
+.box {
+    margin-left: 5%;
+    width: 50%;
+}
+
+.ad-description {
+    text-align: start;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 902px) {
+    .us-dish-details {
+        display: inline-block;
+        overflow: auto;
+    }
+    .add-dish-row {
+        width: 100%;
+        padding: 5%;
+        padding-bottom: 0px;
+    }
+    .add-dish-col {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 816px) {
+    .col-wide .dish-name {
+        font-size: 1em;
+    }
+    #ad-orders {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 573px) {
+    .restaurant {
+        margin-left: 0%;
+        display: none;
+    }
+    .dish {
+        width: 44%;
+    }
+    nav a {
+        padding: 1%;
+    }
+    .content-wrap {
+        display: inline-block;
+        overflow: auto;
+    }
+    .col-narrow {
+        width: 100%;
+    }
+    .col-wide {
+        width: 100%;
+    }
+    .col-wide .dish-name {
+        font-size: 2em;
+    }
+    .us-image {
+        height: 35%;
+    }
+    .login {
+        padding: 0px;
+        padding-top: 20%;
+    }
+    .form {
+        width: 90%;
+    }
+}
