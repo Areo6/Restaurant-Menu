@@ -2,14 +2,14 @@ function valid() {
     var email = document.getElementById("login_email").value;
     var pass = document.getElementById("login_password").value;
     if (email === "admin@menu.com" && pass === "admin") {
-        alert("Wrong Password for Admin")
+        alert("Wrong Password for Admin");
         return true;
     }
     if (email === "admin@menu.com") {
-        alert("Wrong Password for Admin")
+        alert("Wrong Password for Admin");
         return false;
     } else {
-        window.location = "view_all_dishes.html"
+        window.location = "view_all_dishes.html";
         return false;
     }
 }

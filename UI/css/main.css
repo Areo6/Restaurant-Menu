@@ -504,10 +504,6 @@ input:focus {
     padding: 5px;
 }
 
-#add-dish-img {
-    /* min-width: 400px; */
-}
-
 @media only screen and (max-width: 902px) {
     .us-dish-details {
         display: inline-block;
