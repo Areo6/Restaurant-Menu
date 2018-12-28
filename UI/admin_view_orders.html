@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="img/title.jpg" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:900,700" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header role="banner">
+        <nav id="nav-section">
+            <label class="restaurant">Restaurant</label>
+            <a href="view_all_dishes.html">Breakfast</a>
+            <a href="view_all_dishes.html">Lunch</a>
+            <a href="view_all_dishes.html">Dinner</a>
+            <a href="view_all_dishes.html">Drinks</a>
+        </nav>
+        <a href="admin_add_dish.html"><input type="button" value="Add dish" id="add" /></a>
+    </header>
+    <main role="main">
+        <div class="ad-orders" id="ad-orders">
+            <div class="ad-dsh">
+                <p>Orders</p>
+            </div>
+            <div class="ad ad-name">
+                <p class="">Name</p>
+            </div>
+            <div class="ad ad-price">
+                <p class="">Price</p>
+            </div>
+            <div class="ad ad-number">
+                <p class="">Table Number</p>
+            </div>
+            <div class="ad-btns">
+            </div>
+        </div>
+        <div class="ad-orders">
+            <div class="ad-dsh">
+                <img src="img/breakfast1.jpg" class="ad-image" alt="Breakfast">
+            </div>
+            <div class="ad ad-name">
+                <p class="">Eggs Avocado</p>
+            </div>
+            <div class="ad ad-price">
+                <p class="">UGX 16 000</p>
+            </div>
+            <div class="ad ad-number">
+                <p class="">01</p>
+            </div>
+            <div class="ad-btns">
+                <input type="button" value="Accept" onclick="return accepted(this);" class="" />
+                <input type="button" value="Decline" onclick="return accepted(this);" class="" />
+                <input type="button" value="Complete" onclick="return accepted(this);" class="" />
+            </div>
+        </div>
+        <div class="ad-orders">
+            <div class="ad-dsh">
+                <img src="img/breakfast_bread.jpg" class="ad-image" alt="Breakfast">
+            </div>
+            <div class="ad ad-name">
+                <p class="">Bread Eggs</p>
+            </div>
+            <div class="ad ad-price">
+                <p class="">UGX 16 000</p>
+            </div>
+            <div class="ad ad-number">
+                <p class="">02</p>
+            </div>
+            <div class="ad-btns">
+                <input type="button" value="Accept" onclick="return accepted(this);" id="accept" />
+                <input type="button" value="Decline" onclick="return accepted(this);" id="decline" />
+                <input type="button" value="Complete" onclick="return accepted(this);" id="complete" />
+            </div>
+        </div>
+        <div class="ad-orders">
+            <div class="ad-dsh">
+                <img src="img/breakfast_bruschetta.jpeg" class="ad-image" alt="Breakfast">
+            </div>
+            <div class="ad ad-name">
+                <p class="">Eggs Tomatos</p>
+            </div>
+            <div class="ad ad-price">
+                <p class="">UGX 16 000</p>
+            </div>
+            <div class="ad ad-number">
+                <p class="">03</p>
+            </div>
+            <div class="ad-btns">
+                <input type="button" value="Accept" onclick="return accepted(this);" class="" />
+                <input type="button" value="Accept" onclick="return accepted(this);" class="" />
+                <input type="button" value="Complete" onclick="return accepted(this);" class="" />
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

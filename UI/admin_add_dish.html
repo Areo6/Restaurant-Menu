@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="img/title.jpg" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:900,700" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header role="banner">
+        <nav id="nav-section">
+            <label class="restaurant">Restaurant</label>
+            <a href="view_all_dishes.html">Breakfast</a>
+            <a href="view_all_dishes.html">Lunch</a>
+            <a href="view_all_dishes.html">Dinner</a>
+            <a href="view_all_dishes.html">Drinks</a>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="dsh">
+            <div class="us-dish-details">
+                <div class="col-narrow add-dish-row">
+                    <img src="img/breakfast1.jpg" class="image" alt="Breakfast" id="add-dish-img">
+                </div>
+                <div class="col-wide add-dish-col">
+                    <div class="admin-add-dish details-lab">
+                        <label for="ad-dish-label">Dish Name: </label>
+                        <input type="text" placeholder="Dish Name Here" name="ad-dish-label" class="ad-add-details-box box" />
+                    </div>
+                    <div class="admin-add-dish details-lab">
+                        <label for="ad-price-label">Price: Ush</label>
+                        <input type="number" name="ad-price-label" placeholder="Price Here" class="ad-add-details-box box" min="1" placeholder="0" />
+                    </div>
+                    <div class="ad-category details-lab admin-add-dish">
+                        <label>Category: </label>
+                        <div class="ad-add-details-box ad-select box">
+                            <select name="category" class="ad-add-details-box ad-select-options" onchange="this.nextElementSibling.value=this.value">
+                                    <option value=""></option>
+                                    <option value="televisions">Breakfast</option>
+                                    <option value="cameras">Lunch</option>
+                                    <option value="musical instruments">Dinner</option>
+                                    <option value="decoders">Drinks</option>
+                                    <option value="DVD players">Other</option>
+                            </select>
+                            <input type="text" name="format" value="" class="ad-add-details-box ad-input" />
+                        </div>
+                    </div>
+                    <div class="admin-add-dish details-lab">
+                        <label for="ad-desc-label">Description: </label>
+                        <textarea name="ad-desc-label" class="ad-add-details-box box ad-description" cols="30" rows="5" placeholder="Dish description here"></textarea>
+                    </div>
+                    <div class="add-dish-btns">
+                        <button onclick="add()" class="admin-add-btns ad-order-btn">Add</button>
+                        <a href="admin_view_orders.html"><button class="admin-add-btns ad-cancel-btn">Cancel</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
